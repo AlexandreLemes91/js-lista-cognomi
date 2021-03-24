@@ -8,6 +8,10 @@
 //var cognomi e chiedere all utente il proprio
 var cognomi = ["rossi", "bianchi", "neri", "verdi"];
 var cognomeUtente = prompt("Inserire il proprio cognome");
+
+while( !isNaN(cognomeUtente) ){
+    cognomeUtente = prompt("Carattere non riconosciuto! Inserire un cognome valido");
+}
 //inserire il cognome utente
 cognomi.push(cognomeUtente);
 //stamp in ordine alfabetico
